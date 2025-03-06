@@ -60,7 +60,21 @@ export default function App() {
       </main>
 
       <footer className="mt-8 text-center text-sm text-slate-500">
-        <p>© 2025 CarbonTrackr - Track your carbon footprint and make a difference</p>
+        <div className="grid grid-cols-1 md:grid-cols-3 gap-4">
+          <div className="card p-4 low-emission">
+            <h3 className="font-medium text-green-800">Low Impact Activities</h3>
+            <p className="text-sm text-slate-600">Walking, cycling, local produce</p>
+          </div>
+          <div className="card p-4 medium-emission">
+            <h3 className="font-medium text-yellow-800">Medium Impact</h3>
+            <p className="text-sm text-slate-600">Public transport, moderate flights</p>
+          </div>
+          <div className="card p-4 high-emission">
+            <h3 className="font-medium text-red-800">High Impact Activities</h3>
+            <p className="text-sm text-slate-600">Frequent flights, gas vehicles</p>
+          </div>
+        </div>
+        <p className="mt-15">© 2025 CarbonTrackr - Track your carbon footprint and make a difference</p>
       </footer>
     </div>
   );
